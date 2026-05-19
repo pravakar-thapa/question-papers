@@ -21,6 +21,7 @@ const createApp = () => {
   app.use(express.json({ limit: "10kb" }));
   app.use(express.urlencoded({ extended: false, limit: "10kb" }));
   app.use(genericLimiter);
+  app.use(cors());
 
   registerRoutes(app, { authLimiter });
 
