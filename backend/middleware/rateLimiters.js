@@ -16,14 +16,14 @@ const createRateLimiters = () => {
   return {
     genericLimiter: rateLimit({
       windowMs: 15 * 60 * 1000,
-      max: 1000,
+      max: 200,
       standardHeaders: true,
       legacyHeaders: false,
       message: { message: "Too many requests, please try again later." },
     }),
     authLimiter: rateLimit({
       windowMs: 15 * 60 * 1000,
-      max: 1000,
+      max: 20,
       standardHeaders: true,
       legacyHeaders: false,
       message: {
