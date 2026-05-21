@@ -2,6 +2,28 @@
 
 A full-stack question paper archive for students and educators. Users can browse, save, upload, download, and discuss PDF question papers while admins moderate uploads and manage the library.
 
+## Live Demo
+
+Frontend: https://question-papers-sable.vercel.app/
+Backend API: https://questionpapers-backend.onrender.com
+
+# Public Demo User / Signup as New User
+username: demo_user
+Password: du@123
+
+# Public Admin User
+"Admin features available upon request"
+
+
+## Key Features
+
+- JWT authentication & role-based access
+- PDF upload + moderation workflow
+- Nested comments and replies
+- Admin dashboard & audit logs
+- MongoDB + Cloudinary integration
+- Fully deployed MERN stack app
+
 ## Features
 
 - User signup and JWT login
@@ -49,7 +71,7 @@ frontend/
 
 ## Environment Variables
 
-Create a root `.env` file for local backend development:
+Example backend environment variables:
 
 ```env
 JWT_SECRET=replace_with_a_long_random_secret
@@ -169,7 +191,7 @@ Set Vercel environment variables:
 REACT_APP_API_BASE_URL=https://your-render-backend.onrender.com
 ```
 
-After Vercel deploys, update Render's `FRONTEND_URL` to the final Vercel URL and redeploy the backend.
+
 
 ## Admin Setup
 
